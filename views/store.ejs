@@ -4,7 +4,11 @@
         <title>The Generics | Store</title>
         <meta name="description" content="This is the description">
         <link rel="stylesheet" href="styles.css" />
-        <script src="store.js" async></script>
+        <script src="https://checkout.stripe.com/checkout.js" defer></script>
+        <script>
+            var stripePublicKey = '<%= stripePublicKey %>'
+        </script>
+        <script src="store.js" defer></script>
     </head>
     <body>
         <header class="main-header">
@@ -21,7 +25,7 @@
             <h2 class="section-header">MUSIC</h2>
             <div class="shop-items">
                 <% items.music.forEach(function(item){ %>   
-                    <div class="shop-item" data-item-id = "<%= item.id %>">
+                    <div class="shop-item" data-item-id="<%= item.id %>">
                         <span class="shop-item-title"><%= item.name %></span>
                         <img class="shop-item-image" src="Images/<%= item.imgName %>">
                         <div class="shop-item-details">
@@ -36,7 +40,7 @@
             <h2 class="section-header">MERCH</h2>
             <div class="shop-items">
                 <% items.merch.forEach(function(item){ %>   
-                    <div class="shop-item" data-item-id = "<%= item.id %>">
+                    <div class="shop-item" data-item-id="<%= item.id %>">
                         <span class="shop-item-title"><%= item.name %></span>
                         <img class="shop-item-image" src="Images/<%= item.imgName %>">
                         <div class="shop-item-details">
