@@ -10,8 +10,21 @@ console.log(stripeSecretKey, stripePublicKey)
 // express make manual operations much earier than generic node based server
 const express = require('express')
 const app = express() 
+const fs = require('fs')
 
 app.set('view engine', 'ejs')
 app.use(express.static('public'))      // marks all files in public folder as static, making them available on the frontend
+
+app.get('/store', function(req, res) {
+    fs.readFile('items.json', function(error, data) {
+       if (error) {
+           res.status(500).end()
+       } else {
+           res.render('store.ejs', {
+               items: JSON.parse(data)
+           })
+       }
+    })
+})
 
 app.listen(3000)
