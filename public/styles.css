@@ -1,13 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
 @import url("https://fonts.googleapis.com/css?family=Metal+Mania");
-
-@font-face {
-    font-family: "Booter - Zero Zero";
-    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
-         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
-    font-weight: normal;
-    font-style: normal;
-}
+@import url("https://fonts.googleapis.com/css?family=Indie+Flower");
+@import url("https://fonts.googleapis.com/css?family=Monoton");
+@import url("https://fonts.googleapis.com/css?family=Gloria+Hallelujah");
 
 * {
     box-sizing: border-box;
@@ -53,23 +48,23 @@ html, body {
 
 .main-header {
     background-color: rgba(0, 0, 0, .6);
-    background-image: url("Images/Header Background.jpg");
+    background-image: url("Images/bround.jpeg");
     background-blend-mode: multiply;
     background-size: cover;
     padding-bottom: 30px;
 }
 
-.band-name {
+.store-name {
     text-align: center;
     margin: 0;
-    font-size: 4em;
-    font-family: "Booter - Zero Zero";
+    font-size: 2em;
+    font-family: "Gloria Hallelujah";
     font-weight: normal;
     color: white;
 }
 
-.band-name-large {
-    font-size: 8em;
+.store-name-large {
+    font-size: 4em;
 }
 
 .content-section {
@@ -82,14 +77,14 @@ html, body {
     padding: 0 1.5em;
 }
 .section-header {
-    font-family: "Metal Mania";
+    font-family: "Monoton";
     font-weight: normal;
     color: #333;
     text-align: center;
     font-size: 2.5em;
 }
 
-.about-band-image {
+.about-store-image {
     float: left;
     height: 200px;
     width: 200px;
@@ -145,18 +140,6 @@ html, body {
     background-color: rgba(255, 255, 255, .3);
 }
 
-.btn-play {
-    display: block;
-    margin: 0 auto;
-    color: #2D9CDB;
-    font-size: 4em;
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    padding: 0;
-    text-align: center;
-}
-
 .btn-primary {
     color: white;
     background-color: #56CCF2;
@@ -169,36 +152,36 @@ html, body {
     background-color: #2D9CDB;
 }
 
-.tour-row {
+.game-row {
     border-bottom: 1px solid black;
     padding-bottom: 1em;
     margin-bottom: 1em;
 }
 
-.tour-row:last-child {
+.game-row:last-child {
     border: none;
 }
 
-.tour-item {
+.game-item {
     display: inline-block;
     padding-right: .5em;
 }
 
-.tour-date {
+.game-date {
     color: #555;
     width: 11%;
     font-weight: bold;
 }
 
-.tour-city {
+.game-city {
     width: 24%;
 }
 
-.tour-arena {
+.game-arena {
     width: 42%;
 }
 
-.tour-btn {
+.game-btn {
     max-width: 19%;
 }
 

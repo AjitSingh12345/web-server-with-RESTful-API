@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>The Generics | Store</title>
+        <title>Ajit's Garage | Store</title>
         <meta name="description" content="This is the description">
         <link rel="stylesheet" href="styles.css" />
         <script src="https://checkout.stripe.com/checkout.js" defer></script>
@@ -19,12 +19,12 @@
                     <li><a href="about.html">ABOUT</a></li>
                 </ul>
             </nav>
-            <h1 class="band-name band-name-large">The Generics</h1>
+            <h1 class="store-name store-name-large">Ajit's Garage</h1>
         </header>
         <section class="container content-section">
-            <h2 class="section-header">MUSIC</h2>
+            <h2 class="section-header">PRODUCTS</h2>
             <div class="shop-items">
-                <% items.music.forEach(function(item){ %>   
+                <% items.Products.forEach(function(item){ %>   
                     <div class="shop-item" data-item-id="<%= item.id %>">
                         <span class="shop-item-title"><%= item.name %></span>
                         <img class="shop-item-image" src="Images/<%= item.imgName %>">
@@ -37,9 +37,9 @@
             </div>
         </section>
         <section class="container content-section">
-            <h2 class="section-header">MERCH</h2>
+            <h2 class="section-header">ClOTHES</h2>
             <div class="shop-items">
-                <% items.merch.forEach(function(item){ %>   
+                <% items.Clothes.forEach(function(item){ %>   
                     <div class="shop-item" data-item-id="<%= item.id %>">
                         <span class="shop-item-title"><%= item.name %></span>
                         <img class="shop-item-image" src="Images/<%= item.imgName %>">
@@ -68,7 +68,7 @@
         </section>
         <footer class="main-footer">
             <div class="container main-footer-container">
-                <h3 class="band-name">The Generics</h3>
+                <h3 class="store-name">Ajit's Garage</h3>
                 <ul class="nav footer-nav">
                     <li>
                         <a href="https://www.youtube.com" target="_blank">
