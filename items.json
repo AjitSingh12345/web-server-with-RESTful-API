@@ -3,25 +3,25 @@
         {
             "id": 1,
             "name": "Basketball",
-            "price": 1299,
+            "price": 2299,
             "imgName": "basketball.png"
         },
         {
             "id": 2,
             "name": "Calculator",
-            "price": 1499,
+            "price": 8499,
             "imgName": "calc.png"
         },
         {
             "id": 3,
             "name": "Fridge",
-            "price": 999,
-            "imgName": "fri.jpeg"
+            "price": 89999,
+            "imgName": "frid.png"
         },
         {
             "id": 4,
             "name": "Stereo",
-            "price": 1999,
+            "price": 5999,
             "imgName": "stereo.jpeg"
         }
     ],
@@ -29,13 +29,13 @@
         {
             "id": 5,
             "name": "T-Shirt",
-            "price": 1999,
+            "price": 2999,
             "imgName": "shirt.jpeg"
         },
         {
             "id": 6,
             "name": "Shoes",
-            "price": 699,
+            "price": 18099,
             "imgName": "shoe.jpeg"
         }
     ]
